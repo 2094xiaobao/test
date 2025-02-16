@@ -212,6 +212,7 @@ if __name__ == '__main__':
     parser.add_argument('--optim', type=str, default='SGD', choices=['Adam', 'SGD'], help='Default buffer_model type')
     parser.add_argument('--decay', type=int, default=0, choices=[1, 0], help='whether to decay lr at 1/2 training epochs')
     parser.add_argument('--decay_factor', type=float, default=0.1, help='decay factor of lr at 1/2 training epochs')
+    parser.add_argument("--keep_ratio", type=float, default=1.0)
     # GEOM
     parser.add_argument('--lam', type=float, default=0.70)
     parser.add_argument('--T', type=int, default=200)
